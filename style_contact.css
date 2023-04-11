@@ -10,13 +10,42 @@ html{
     background-color: #41145f;
 }
 
-
+/* NAV  */
 nav{
-    height:10vh;
- background-color: floralwhite;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    background-color: white;
+    height:15vh;
+}
+
+nav li{
+    font-family: 'Cormorant SC';
+font-style: normal;
+font-weight: 400;
+font-size: 4.8rem;
+line-height: 5.8rem;
+list-style: none;
+color: #41145F;
+margin: 2.5rem;
+}
+
+ul{
+    display: flex;
+}
+
+.logo img{
+    height: 9rem;
+    
 }
 
 
+
+
+/* CONTACT  */
 .contact-body{
     background-image: linear-gradient(to right bottom,#0000004c,#00000059), url('Images/call.jpg');
     background-position:center;
@@ -31,7 +60,7 @@ nav{
     box-shadow: 0 0 2rem 0 #292929;
     top:50%;
     left:50%;
-    transform: translate(40%,-40%);
+    transform: translate(40%,-35%);
     position:absolute;
     color:#f0f0f0;
     text-align: center;
