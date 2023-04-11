@@ -1,0 +1,60 @@
+html{
+    font-size: 62.5%;   /*   1rem = 10px  */
+    margin: 0;
+    padding: 0;
+    box-sizing: Border-Box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: Border-Box;
+    }
+
+body{
+    /* Background*/
+display: block;
+align-items: center;
+text-align: center;
+position: absolute;
+width: 684px;
+height: 924px;
+left: 0px;
+top: 79px;
+justify-content:flex-end;
+background-color: #41145f;
+}
+
+.mission{
+/* Mission box*/
+display: block;
+align-items: center;
+justify-content: center;
+position: absolute;
+width: 681px;
+height: 230px;
+background: #FFFFFF;
+border-radius: 59px;
+padding: 20px;
+}
+
+.pics{
+/* Pictures box */
+display: block;
+position: absolute;
+width: 681px;
+height: 235px;
+background: #9146FF;
+padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Sansita+Swashed:wght@300;400&display=swap');
