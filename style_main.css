@@ -1,0 +1,132 @@
+
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Sansita+Swashed:wght@300;400&display=swap');
+
+/* sets default margin to 0 */
+*{
+    margin: 0;
+}
+
+/* sets */
+html{
+    font-size: 62.5%;   /*   1rem = 10px  */
+    font-family: EB Garamond;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+}
+
+nav li{
+    font-family: 'Cormorant SC';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+list-style: none;
+color: #41145F;
+margin: 25px;
+}
+
+ul{
+    display: flex;
+}
+
+.logo img{
+    height: 9rem;
+    
+}
+
+section{
+    background-image: url(/images/pexels-kaique-rocha-109919\ 1.png);
+    width: inherit;
+    background-size: cover;
+    height: 88vh;
+    background-position: center;
+}
+
+.white{
+    height: auto;
+    width: inherit;
+}
+
+.white p{
+    font-family: 'EB Garamond';
+font-style: normal;
+font-weight: 400;
+font-size: 53px;
+line-height: 69px;
+
+color: #41145F;
+margin: 50px;
+
+}
+
+.be{
+    background-color: #F1ECE8;
+    height: 60vh;
+    width: inherit;
+}
+
+.purple{
+    background-color: #41145F;
+    height: 60vh;
+    width: inherit;
+}
+
+.buttonClinics{
+    color: white;
+    padding: 10px;
+    border-radius: 26px;
+    margin: 15px;
+    background-color: #9146FF;
+}
+
+.vertical{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+.vertical h1{
+    font-family: 'Hammersmith One';
+font-style: normal;
+font-weight: 400;
+font-size: 91px;
+line-height: 114px;
+
+color: #41145F;
+}
+#light{
+    font-family: 'Sansita Swashed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 91px;
+    line-height: 109px;
+    color: #9146FF;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+.horizontal{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
