@@ -1,13 +1,13 @@
 
 /* import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Sansita+Swashed:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Mukta&family=Sansita+Swashed:wght@300;400&display=swap');
 
 /* sets default margin to 0 */
 *{
     margin: 0;
 }
 
-/* sets */
+/* sets default font properties */
 html{
     font-size: 62.5%;   /*   1rem = 10px  */
     font-family: EB Garamond;
@@ -18,20 +18,26 @@ html{
 
 }
 
+/* navigation bar styling */
 nav{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    flex-flow: row wrap;
     align-items: center;
     padding: 4rem;
+    justify-content: space-between;
+    background: white;
+    box-shadow: -11px -8px 14px;
+    
 }
 
+/* sets styling for elements in nav bar */
 nav li{
     font-family: 'Cormorant SC';
 font-style: normal;
 font-weight: 400;
-font-size: 48px;
+font-size: 35px;
 line-height: 58px;
 list-style: none;
 color: #41145F;
@@ -41,6 +47,7 @@ margin: 25px;
 ul{
     display: flex;
 }
+
 
 .logo img{
     height: 9rem;
@@ -61,20 +68,19 @@ section{
 }
 
 .white p{
-    font-family: 'EB Garamond';
-font-style: normal;
-font-weight: 400;
-font-size: 53px;
-line-height: 69px;
-
-color: #41145F;
-margin: 50px;
-
+    font-family: "EB Garamond";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 69px;
+    color: rgb(65, 20, 95);
+    width: 124rem;
+    max-width: 46vw;
 }
 
 .be{
-    background-color: #F1ECE8;
-    height: 60vh;
+    background-color: rgb(241, 236, 232);
+    height: auto;
     width: inherit;
 }
 
@@ -100,22 +106,23 @@ margin: 50px;
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding-bottom: 5rem;
     
 }
 .vertical h1{
     font-family: 'Hammersmith One';
 font-style: normal;
 font-weight: 400;
-font-size: 91px;
+font-size: 8em;
 line-height: 114px;
-
+margin: 2rem;
 color: #41145F;
 }
 #light{
     font-family: 'Sansita Swashed';
     font-style: normal;
     font-weight: 400;
-    font-size: 91px;
+    font-size: 8em;
     line-height: 109px;
     color: #9146FF;
     margin-bottom: 30px;
@@ -125,8 +132,140 @@ color: #41145F;
 .horizontal{
     display: flex;
     flex-direction: row;
-    align-content: center;
-    justify-content: center;
+    place-content: center;
     align-items: center;
-    margin: 30px;
+    /* margin: 30px; */
+    flex-wrap: wrap;
+    padding: 30px;
+    align-content: center;
+    width: 100%;
+    justify-content: space-evenly;
+
+    
+}
+
+.horizontal-centered{
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    align-items: center;
+    /* margin: 30px; */
+    flex-wrap: wrap;
+    padding: 30px;
+    align-content: center;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.horizontal img{
+    width: 70rem;
+    margin: 28px;
+}
+
+.horizontal-imgButton{
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    align-items: center;
+    /* margin: 30px; */
+    flex-wrap: wrap;
+    padding: 30px;
+    align-content: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+index{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+section h1{
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 234px;
+    text-align: center;
+    
+    color: #FFFFFF;
+
+}
+section h2{
+    background: #41145F;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(5px);
+
+border-radius: 39px;
+}
+
+section p{
+    font-family: "EB Garamond";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    width: 50vw;
+    color: rgb(255, 255, 255);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px;
+    height: auto;
+
+}
+
+#parf{
+    font-family: "EB Garamond";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 69px;
+    color: rgb(65, 20, 95);
+    width: 124rem;
+    max-width: 46vw;
+}
+
+.purpleArt{
+    background-image: url(/images/xx.png);
+    /* height: 50vh; */
+    height: auto;
+    background-position: bottom;
+    background-size: cover;
+}
+
+#whiteTitle{
+    font-family: 'Hammersmith One';
+font-style: normal;
+font-weight: 400;
+font-size: 8em;
+line-height: 114px;
+
+color: #FFFFFF;
+}
+.vertical ul{
+    display: flex;
+    flex-direction: column;
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 69px;
+    width: 80rem;
+    color: #FFFFFF;
+}
+
+.imgButton{
+
 }
