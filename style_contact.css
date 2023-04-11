@@ -22,7 +22,7 @@ nav{
     background-image: linear-gradient(to right bottom,#0000004c,#00000059), url('Images/call.jpg');
     background-position:center;
     background-size: cover;
-    height: 105vh;
+    height: 103vh;
     }
     
 .contact-box.contact-width{
@@ -238,3 +238,119 @@ transition: all 0.3s ease 0s;
     align-items: center;
 }
 
+
+
+
+/* MEDIA QUERIES  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 1024px) and (max-width: 1300px)  {                                                    /*Small Desktop*/
+
+     /* CONTACT  */
+
+     html{
+        font-size: 62.5%;
+    }
+
+
+    .contact-box.contact-width{
+        transform: translate(40%,-40%);
+        }
+}
+ 
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 768px) and (max-width: 1255px) {                                                     /*Laptop*/
+
+     /* CONTACT  */
+
+     html{
+        font-size: 45%;
+    }
+
+    .contact-body{
+        height: 100vh;
+    }
+
+
+    .contact-box.contact-width{
+        transform: translate(-50%,-38%);
+        }
+ }
+ 
+
+
+
+
+
+
+
+
+@media all and (min-width: 480px) and (max-width: 768px) {                                                       /*Tablet*/
+
+     /* CONTACT  */
+
+     html{
+        font-size: 40%;
+    }
+
+    .contact-body{
+        height: 90vh;
+    }
+
+    .contact-box.contact-width{
+        transform: translate(-50%,-50%);
+        }
+}
+ 
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 480px) {                                                                             /*Phone*/
+
+    /* CONTACT  */
+
+    html{
+        font-size: 32%;
+    }
+
+    .contact-body{
+        height: 80vh;
+    }
+
+    .contact-box.contact-width{
+        transform: translate(-50%,-50%);
+        }
+
+}
