@@ -9,41 +9,71 @@
 }
 html{
     font-size: 62.5%;   /*   1rem = 10px  */
-    background-color: #41145f;
 }
 
 /* NAV  */
 nav{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    flex-flow: row wrap;
     align-items: center;
-    padding: 4rem;
-    background-color: white;
-    height:15vh;
+    /* padding: 4rem; */
+    padding-right: 4rem;
+    padding-left: 4rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    justify-content: space-between;
+    background: white;
+    z-index: 1;
+    box-shadow: -11px -8px 14px;
 }
 
+/* sets styling for elements in nav bar */
 nav li{
     font-family: 'Cormorant SC';
 font-style: normal;
 font-weight: 400;
-font-size: 4.8rem;
+font-size: 3.5rem;
 line-height: 5.8rem;
 list-style: none;
 color: #41145F;
 margin: 2.5rem;
+text-align: center;
 }
-
+/* sets display option to flex for unordered list*/
 ul{
     display: flex;
 }
 
-.logo img{
-    height: 9rem;
-    
+.buttonClinics{
+    color: white;
+    padding: 10px;
+    border-radius: 26px;
+    margin: 15px;
+    background-color: #9146FF;
+    text-align: center;
 }
 
+.nav-btn{
+text-decoration: none;
+}
+
+.nav-btn.clinic{
+    color:white;
+}
+
+/* sets style for hamburger menu that appears when in mobile view */
+.hamburger{
+    height: 50px;
+    width: 50px;
+    display: none;
+}
+
+/* sets size for main logo in nav bar */
+.logo img{
+    height: 9rem;
+}
 
 
 
@@ -62,7 +92,7 @@ ul{
     box-shadow: 0 0 2rem 0 #292929;
     top:50%;
     left:50%;
-    transform: translate(40%,-35%);
+    transform: translate(40%,-30%);
     position:absolute;
     color:#f0f0f0;
     text-align: center;
@@ -178,6 +208,10 @@ ul{
 
 /* FOOTER  */
 
+footer{
+    background-color: #41145f;
+}
+
 .top-footer{
     background-color: #41145f;
     height:20vh;
@@ -258,31 +292,23 @@ transition: all 0.3s ease 0s;
 .bottom-footer{
     background-color: #230031;
     margin:0;
-    height: 1.5vh;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
 }
 
-.bottom-footer p{
+.footer-txt{
     text-align: center;
-    color: #ffffff;
+    color: #FFFFFF;
     font-size:1.2rem;
-    align-items: center;
 }
 
 
 
 
 /* MEDIA QUERIES  */
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -317,6 +343,17 @@ transition: all 0.3s ease 0s;
 
 @media all and (min-width: 768px) and (max-width: 1255px) {                                                     /*Laptop*/
 
+    /* NAV  */
+
+
+    .nav-links{
+        display: none;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+
      /* CONTACT  */
 
      html{
@@ -343,6 +380,26 @@ transition: all 0.3s ease 0s;
 
 @media all and (min-width: 480px) and (max-width: 768px) {                                                       /*Tablet*/
 
+
+    /* NAV  */
+
+    .nav-links{
+        display: none;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+
+    .phoneHeading{
+        display: flex;
+        padding-bottom: 3rem;
+    }
+
+    nav{
+        justify-content: space-between;
+    }
+
      /* CONTACT  */
 
      html{
@@ -356,6 +413,7 @@ transition: all 0.3s ease 0s;
     .contact-box.contact-width{
         transform: translate(-50%,-50%);
         }
+
 }
  
 
@@ -368,6 +426,26 @@ transition: all 0.3s ease 0s;
 
 
 @media all and (max-width: 480px) {                                                                             /*Phone*/
+
+    /* NAV  */
+
+    .nav-links{
+        display: none;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+
+    .phoneHeading{
+        display: flex;
+        padding-bottom: 3rem;
+    }
+
+    nav{
+        justify-content: space-between;
+    }
+    
 
     /* CONTACT  */
 
