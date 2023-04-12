@@ -25,11 +25,15 @@ nav{
     top: 0px;
     flex-flow: row wrap;
     align-items: center;
-    padding: 4rem;
+    /* padding: 4rem; */
+    padding-right: 4rem;
+    padding-left: 4rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
     justify-content: space-between;
     background: white;
+    z-index: 1;
     box-shadow: -11px -8px 14px;
-    
 }
 
 /* sets styling for elements in nav bar */
@@ -42,18 +46,26 @@ line-height: 58px;
 list-style: none;
 color: #41145F;
 margin: 25px;
+text-align: center;
 }
-
+/* sets display option to flex for unordered list*/
 ul{
     display: flex;
 }
+/* sets style for hamburger menu that appears when in mobile view */
+.hamburger{
+    height: 50px;
+    width: 50px;
+    display: none;
+}
 
-
+/* sets size for main logo in nav bar */
 .logo img{
     height: 9rem;
     
 }
 
+/* sets style for the hero-image section */
 section{
     background-image: url(/images/pexels-kaique-rocha-109919\ 1.png);
     width: inherit;
@@ -62,11 +74,13 @@ section{
     background-position: center;
 }
 
+/* sets style for sections where background is white */
 .white{
     height: auto;
     width: inherit;
 }
 
+/* sets styling for p tags in sections where background is white */
 .white p{
     font-family: "EB Garamond";
     font-style: normal;
@@ -78,26 +92,31 @@ section{
     max-width: 46vw;
 }
 
+/* sets styling for section where background is beige */
 .be{
     background-color: rgb(241, 236, 232);
     height: auto;
     width: inherit;
 }
 
+/* sets styling for section where background is purple  */
 .purple{
     background-color: #41145F;
     height: 60vh;
     width: inherit;
 }
 
+/* sets style for find clinics button in nav bar */
 .buttonClinics{
     color: white;
     padding: 10px;
     border-radius: 26px;
     margin: 15px;
     background-color: #9146FF;
+    text-align: center;
 }
 
+/* sets styling for a div that has as property to display items in a vertical manner */
 .vertical{
     display: flex;
     flex-direction: column;
@@ -109,6 +128,8 @@ section{
     padding-bottom: 5rem;
     
 }
+
+/* sets styling for headings in a vertical div */
 .vertical h1{
     font-family: 'Hammersmith One';
 font-style: normal;
@@ -117,7 +138,10 @@ font-size: 8em;
 line-height: 114px;
 margin: 2rem;
 color: #41145F;
+text-align: center;
 }
+
+/* sets styling for highlighted heading ("where") */
 #light{
     font-family: 'Sansita Swashed';
     font-style: normal;
@@ -129,6 +153,7 @@ color: #41145F;
     margin-right: 20px;
 }
 
+/* sets styling for a div that has as property to display items in a horizontal manner */
 .horizontal{
     display: flex;
     flex-direction: row;
@@ -136,14 +161,16 @@ color: #41145F;
     align-items: center;
     /* margin: 30px; */
     flex-wrap: wrap;
-    padding: 30px;
+    /* padding: 30px; */
     align-content: center;
     width: 100%;
+    padding-top: 0px;
     justify-content: space-evenly;
 
     
 }
 
+/* sets styling for a div that has as property to display items in a horizontal centered manner */
 .horizontal-centered{
     display: flex;
     flex-direction: row;
@@ -151,18 +178,22 @@ color: #41145F;
     align-items: center;
     /* margin: 30px; */
     flex-wrap: wrap;
-    padding: 30px;
+    /* padding: 30px; */
     align-content: center;
     width: 100%;
+    padding-bottom: 0px;
     justify-content: center;
+    
     
 }
 
+/* sets styling for images located within a horintontal div */
 .horizontal img{
     width: 70rem;
     margin: 28px;
 }
 
+/* sets styling for icon buttons */
 .horizontal-imgButton{
     display: flex;
     flex-direction: row;
@@ -170,12 +201,24 @@ color: #41145F;
     align-items: center;
     /* margin: 30px; */
     flex-wrap: wrap;
-    padding: 30px;
+    /* padding: 30px; */
     align-content: center;
     width: 100%;
     justify-content: space-evenly;
 }
 
+.horizontal-imgButton h3{
+    font-family: "Hammersmith One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4em;
+    /* line-height: 114px; */
+    /* margin: 2rem; */
+    color: rgb(65, 20, 95);
+    text-align: center;
+}
+
+/*  */
 index{
     display: flex;
     flex-direction: column;
@@ -185,6 +228,7 @@ index{
     justify-content: center;
 }
 
+/*  */
 section h1{
     font-family: 'Mukta';
     font-style: normal;
@@ -196,12 +240,42 @@ section h1{
     color: #FFFFFF;
 
 }
+
 section h2{
     background: #41145F;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 backdrop-filter: blur(5px);
 
 border-radius: 39px;
+}
+.phoneHeading{
+    display: none;
+    background-color: #41145F;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.phoneHeading h1{
+    font-family: Mukta;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8rem;
+    line-height: 9rem;
+    text-align: center;
+    margin: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.phoneHeading p{
+    font-family: "EB Garamond";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    width: 50vw;
+    color: rgb(255, 255, 255);
 }
 
 section p{
@@ -262,10 +336,96 @@ color: #FFFFFF;
     font-weight: 400;
     font-size: 35px;
     line-height: 69px;
-    width: 80rem;
     color: #FFFFFF;
 }
 
 .imgButton{
+    width: 25rem;
+    margin: 4rem;
+}
+
+#Polygon{
+    width: 44rem;
+    margin: 28px;
 
 }
+
+.vertical h3{
+    font-family: "Hammersmith One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4em;
+    /* line-height: 114px; */
+    /* margin: 2rem; */
+    color: rgb(65, 20, 95);
+    text-align: center;
+    padding: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .white p {
+        width: 70vw;
+        max-width: none;
+    }
+
+    nav{
+        justify-content: center;
+    }
+    section h1{
+        font-size: 10rem;
+        line-height: 17rem;
+    }
+    #parf{
+        width: 70vw;
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .nav-links{
+        display: none;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+
+    .phoneHeading{
+        display: flex;
+    }
+    section{
+        height: 30rem;
+    background-position: right;
+    }
+    section p{
+        display: none;
+    }
+    section h1{
+        display: none;
+    }
+
+    .horizontal img{
+        width: 70vw;
+    }
+    .white p {
+        width: 70vw;
+        max-width: none;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    .phoneHeading p{
+        width: 70vw;
+        max-width: none;
+    }
+
+    .vertical h1{
+        line-height: 8rem;
+        text-align: left;
+        margin-left: 7rem;
+    }
+    #parf{
+        width: 70vw;
+        max-width: none;
+    }
+  }
