@@ -1,72 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
-    /* font-size: 62.5%; 1 rem = 10px */
+  font-size: 62.5%; /* 1 rem = 10px */
+}
+
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Sansita+Swashed:wght@300;400&display=swap");
+
+body {
+  background-color: #41145f;
+}
+/* Header for the Top of the page */
+.resourcesTitle {
+  color: #d9d9d9;
+  text-align: center;
+  font-size: 5rem;
+  padding: 5rem 0;
+  text-shadow: 3px 3px #161418;
+}
+
+/* Background of the page (hero image) */
+.background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
+    url("https://blogs.elca.org/faithlens/files/2022/05/iStock-1145766838.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Holds the images, text, and sections */
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.photo {
+  height: 20rem;
+  width: 35rem;
+}
+
+/* Shapes the boxes */
+.first-section,
+.second-section,
+.third-section {
+  box-sizing: border-box;
+  margin: 4rem;
+  width: 36rem;
+  height: 45rem;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #e5e5e5;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  box-shadow: 0px 10px 10px #161418;
+}
+
+.sectionText {
+  margin-top: 1.8rem;
+  font-size: 1.8rem;
+  color: #41145f;
+  text-align: center;
+}
+
+/* Styling for the ellipses at the bottom containing links */
+.sites {
+  text-align: center;
+  position: relative;
+  top: 4rem;
+}
+
+.links {
+  background-color: #d9d9d9;
+  position: relative;
+  width: 80rem;
+  height: 30rem;
+  left: 30rem;
+  top: 8rem;
+  border-radius: 50%;
+  box-shadow: 0px 10px 10px 10px #161418;
+  text-align: center;
+  font-family: sanista swashed;
+  font-size: 2rem;
+}
+
+/* Styling for text that is below ellipse */
+.emergency {
+  position: relative;
+  top: 10rem;
+  z-index: 4;
+  color: #f1ece8;
+  text-align: center;
+  font-size: 2rem;
+  font-family: sanista swashed;
+  margin: 1rem;
+  padding: 1rem;
+}
+/* Styling for the links text in the ellipse */
+.helpfulLinks {
+  color: #161418;
+  text-align: center;
+  position: relative;
+  top: 3rem;
+  text-decoration: underline dotted;
+}
+
+/* Media Queries Begin Here */
+
+@media only screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  body{
-    background-color:#41145F;
-    
+
+  .links {
+    position: absolute;
+    top: 175rem;
+    left: 9rem;
+    width: 40rem;
+    height: 30rem;
+    font-size: 2rem;
+    border-radius: 0;
   }
-  
-  img{
-    
-    height:20rem;
+
+  .first-section,
+  .second-section,
+  .third-section {
     width: 20rem;
-    
+    margin: 3rem;
   }
-
-  .first-section, .second-section, .third-section{
-    box-sizing:border-box;
-    display:inline-block;
-    position: relative;
-    margin:4rem;
-    width:20rem;
-    height: 30rem;
-    text-align:center;
-    background-color: #E5E5E5;
-    border:2px solid rgba(0, 0 , 0 , 0.3);
-    border-radius: 2px;
+  .photo {
+    width: 19rem;
+    height: 13rem;
   }
-  
-  .links{
-    background-color: #D9D9D9;
-    position: relative;
-    width: 60rem;
-    height: 30rem;
-    left: 15rem;
-    top: 8rem;
-    border-radius: 50%;
-    
+  .emergency {
+    top: 140rem;
   }
-
-
-  .resources_background{
-    background-color: antiquewhite;
-  }
-  .resourcesTitle{
-    color:#D9D9D9;
-    text-align: center;
-    z-index:5;
-  }
-
-  .hotline , .emergency {
-    position:relative;
-    top: 10rem;
-    z-index: 4;
-    color: #F1ECE8;
-    text-align: center;
-  }
-
-  .sites{
-    z-index: 3;
-    text-align: center;
-    position: relative;
-    top: 10rem;
-  }
-  
-  .background{
-    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url("https://media.istockphoto.com/id/176765686/photo/multi-ethnic-team-celebrating.jpg?s=612x612&w=0&k=20&c=XpsmAR3u9AiAs24YNXB-zvQDOd42pdmDZKSdetAmtQQ=");
-    height: 100vh;
-    width:100vw;
-    background-position: center;
-    background-size: cover;
-  }
+}
