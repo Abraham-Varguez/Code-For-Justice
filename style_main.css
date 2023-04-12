@@ -11,20 +11,22 @@
 
 /* sets default font properties */
 html{
-    font-size: 62.5%;   /*   1rem = 10px  */
+     font-size: 62.5%;     /*1rem = 10px  */
     font-family: EB Garamond;
     font-weight: 400;
-    line-height: 42px;
+    /* line-height: 42px; */
     letter-spacing: 0em;
     text-align: left;
 
 }
 
+/* NAV  */
+
 /* navigation bar styling */
 nav{
     display: flex;
     position: sticky;
-    top: 0px;
+    top: 0;
     flex-flow: row wrap;
     align-items: center;
     /* padding: 4rem; */
@@ -35,7 +37,7 @@ nav{
     justify-content: space-between;
     background: white;
     z-index: 1;
-    box-shadow: -11px -8px 14px;
+    box-shadow: -1.1rem -.8rem 1.4rem;
 }
 
 /* sets styling for elements in nav bar */
@@ -65,8 +67,8 @@ text-decoration: none;
 
 /* sets style for hamburger menu that appears when in mobile view */
 .hamburger{
-    height: 50px;
-    width: 50px;
+    height: 5rem;
+    width: 5rem;
     display: none;
 }
 
@@ -74,6 +76,9 @@ text-decoration: none;
 .logo img{
     height: 9rem;
 }
+
+
+/* HOME  */
 
 /* button style for home page  */
 
@@ -152,8 +157,8 @@ section{
     font-family: "EB Garamond";
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
-    line-height: 69px;
+    font-size: 3.5rem;
+    line-height: 6.9rem;
     color: rgb(65, 20, 95);
     width: 124rem;
     max-width: 46vw;
@@ -176,9 +181,9 @@ section{
 /* sets style for find clinics button in nav bar */
 .buttonClinics{
     color: white;
-    padding: 10px;
-    border-radius: 26px;
-    margin: 15px;
+    padding: 1rem;
+    border-radius: 2.6rem;
+    margin: 1.5rem;
     background-color: #9146FF;
     text-align: center;
 }
@@ -202,7 +207,7 @@ section{
 font-style: normal;
 font-weight: 400;
 font-size: 8em;
-line-height: 114px;
+line-height: 11.4rem;
 margin: 2rem;
 color: #41145F;
 text-align: center;
@@ -214,10 +219,10 @@ text-align: center;
     font-style: normal;
     font-weight: 400;
     font-size: 8em;
-    line-height: 109px;
+    line-height: 10.9rem;
     color: #9146FF;
-    margin-bottom: 30px;
-    margin-right: 20px;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
 }
 
 /* sets styling for a div that has as property to display items in a horizontal manner */
@@ -231,7 +236,7 @@ text-align: center;
     /* padding: 30px; */
     align-content: center;
     width: 100%;
-    padding-top: 0px;
+    padding-top: 0;
     justify-content: space-evenly;
 
     
@@ -248,7 +253,7 @@ text-align: center;
     /* padding: 30px; */
     align-content: center;
     width: 100%;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     justify-content: center;
     
     
@@ -257,7 +262,7 @@ text-align: center;
 /* sets styling for images located within a horintontal div */
 .horizontal img{
     width: 70rem;
-    margin: 28px;
+    margin: 2.8rem;
 }
 
 /* sets styling for icon buttons */
@@ -278,30 +283,30 @@ text-align: center;
     font-family: "Hammersmith One";
     font-style: normal;
     font-weight: 400;
-    font-size: 4em;
+    font-size: 4rem;
     /* line-height: 114px; */
     /* margin: 2rem; */
     color: rgb(65, 20, 95);
     text-align: center;
 }
 
-/*  */
-index{
+/* 
+.index{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
     align-items: flex-start;
     justify-content: center;
-}
+ }  */
 
-/*  */
+
 section h1{
     font-family: 'Mukta';
     font-style: normal;
     font-weight: 400;
-    font-size: 150px;
-    line-height: 234px;
+    font-size: 15rem;
+    line-height: 23.4rem;
     text-align: center;
     
     color: #FFFFFF;
@@ -310,10 +315,10 @@ section h1{
 
 section h2{
     background: #41145F;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-backdrop-filter: blur(5px);
+box-shadow: 0 .4rem .4rem rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(.5rem);
 
-border-radius: 39px;
+border-radius: 3.9rem;
 }
 .phoneHeading{
     display: none;
@@ -331,7 +336,7 @@ border-radius: 39px;
     font-size: 8rem;
     line-height: 9rem;
     text-align: center;
-    margin: 30px;
+    margin: 3rem;
     color: rgb(255, 255, 255);
 }
 
@@ -339,8 +344,8 @@ border-radius: 39px;
     font-family: "EB Garamond";
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
-    line-height: 42px;
+    font-size: 3.5rem;
+    line-height: 4.2rem;
     width: 50vw;
     color: rgb(255, 255, 255);
 }
@@ -349,8 +354,8 @@ section p{
     font-family: "EB Garamond";
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
-    line-height: 42px;
+    font-size: 3.5rem;
+    line-height: 4.2rem;
     width: 50vw;
     color: rgb(255, 255, 255);
 }
@@ -362,7 +367,7 @@ section{
     align-content: center;
     align-items: flex-start;
     justify-content: center;
-    padding: 50px;
+    padding: 5rem;
     height: auto;
 
 }
@@ -371,8 +376,8 @@ section{
     font-family: "EB Garamond";
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
-    line-height: 69px;
+    font-size: 3.5rem;
+    line-height: 6.9rem;
     color: rgb(65, 20, 95);
     width: 124rem;
     max-width: 46vw;
@@ -391,18 +396,19 @@ section{
 font-style: normal;
 font-weight: 400;
 font-size: 8em;
-line-height: 114px;
+line-height: 11.4rem;
 
 color: #FFFFFF;
 }
 .vertical ul{
     display: flex;
     flex-direction: column;
+    align-items: center;
     font-family: 'EB Garamond';
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
-    line-height: 69px;
+    font-size: 3.5rem;
+    line-height: 6.9rem;
     color: #FFFFFF;
 }
 
@@ -413,7 +419,7 @@ color: #FFFFFF;
 
 #Polygon{
     width: 44rem;
-    margin: 28px;
+    margin: 2.8rem;
 
 }
 
@@ -428,6 +434,23 @@ color: #FFFFFF;
     text-align: center;
     padding: 2rem;
 }
+
+
+/* CLINIC MAP  */
+
+.maps-container{
+    height:85vh;
+    padding:2rem;
+    background-color: #f1ece8;
+}
+
+iframe{
+    border-radius: 1rem;
+}
+
+
+
+
 
 /* FOOTER  */
 
@@ -557,6 +580,11 @@ transition: all 0.3s ease 0s;
 }
 
 @media screen and (max-width: 720px) {
+
+html{
+    font-size: 40%;
+}
+
     .nav-links{
         display: none;
     }
@@ -564,7 +592,9 @@ transition: all 0.3s ease 0s;
     .hamburger{
         display: flex;
     }
-
+    .index-btn.index-btn-purp.btn-top{
+        display: none;
+    }
     .phoneHeading{
         display: flex;
         padding-bottom: 3rem;
@@ -603,6 +633,10 @@ transition: all 0.3s ease 0s;
     #parf{
         width: 70vw;
         max-width: none;
+    }
+
+    .maps-container{
+        height:75vh;
     }
   }
 
