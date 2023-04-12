@@ -207,6 +207,17 @@ text-align: center;
     justify-content: space-evenly;
 }
 
+.horizontal-imgButton h3{
+    font-family: "Hammersmith One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4em;
+    /* line-height: 114px; */
+    /* margin: 2rem; */
+    color: rgb(65, 20, 95);
+    text-align: center;
+}
+
 /*  */
 index{
     display: flex;
@@ -333,6 +344,24 @@ color: #FFFFFF;
     margin: 4rem;
 }
 
+#Polygon{
+    width: 44rem;
+    margin: 28px;
+
+}
+
+.vertical h3{
+    font-family: "Hammersmith One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4em;
+    /* line-height: 114px; */
+    /* margin: 2rem; */
+    color: rgb(65, 20, 95);
+    text-align: center;
+    padding: 2rem;
+}
+
 @media screen and (max-width: 1200px) {
     .white p {
         width: 70vw;
@@ -392,6 +421,8 @@ color: #FFFFFF;
 
     .vertical h1{
         line-height: 8rem;
+        text-align: left;
+        margin-left: 7rem;
     }
     #parf{
         width: 70vw;
