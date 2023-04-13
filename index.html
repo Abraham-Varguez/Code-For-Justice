@@ -10,8 +10,19 @@
     <script src="https://kit.fontawesome.com/3cfffc1dc0.js" crossorigin="anonymous"></script>
 </head>
 
+
 <body class="home">
-    <nav>
+    <ul class="hamburger-menu"  id="ham-menu">
+        <li><a class="menu" href="mission.html">Mission Statement</a></li>
+        <li><a class="menu" href="resources.html">Resources</a></li>
+        <li><a class="menu" href="contact.html">Contact Us</a></li>
+        <li><a class="menu" href="contact.html">Find Clinics</a></li>
+        
+    </ul>
+    <nav >
+        <div class="nav-vertical">
+        <div class="nav-horizontal">
+
         <div class="logo">
             <a href="index.html"><img src="/images/MENDINGlogo.png"></a>
         </div>
@@ -24,9 +35,14 @@
             </ul>
         </div>
         <div class="hamburger">
-            <img src="/images/menu-burger.svg" alt="">
+            <img src="/images/menu-burger.svg" alt="" id="iconOpen">
+            <img src="/images/cross.svg" alt="" id="iconClosed">
         </div>
+    </div>
+   
+</div>
     </nav>
+
     
     <section class="hero-home hidden">
 
