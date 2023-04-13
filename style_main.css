@@ -2,12 +2,16 @@
 /* import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Mukta&family=Sansita+Swashed:wght@300;400&display=swap');
 
-/* sets default margin to 0 */
-*{
+
+
+*,
+*::after,
+*::before{
     margin: 0;
     padding:0;
     box-sizing: border-box;
 }
+
 
 .hamburger-menu{
 
@@ -24,6 +28,7 @@
     align-items: center;
     margin-top: 14vh;
 }
+
 #iconClosed{
     display: none;
 }
@@ -76,75 +81,16 @@ menu ul{
     text-align: center;
     text-decoration: none;
     padding: 2rem;
-
-}
-.hidden{
-opacity: 0;
-transition: all 1s ;
-
 }
 
-.hidden-center-1{
-    opacity: 0;
-   translate:165%;
-    transition: all 1s ease-out;
-}
-.hidden-center-2{
-    opacity: 0;
-   translate:100%;
-    transition: all 1s ease-out;
-}
-.hidden-center-3{
-    opacity: 0;
-   translate:-100%;
-    transition: all 1s ease-out;
-}
-.hidden-center-4{
-    opacity: 0;
-   translate:-165%;
-    transition: all 1s ease-out;
-}
-.hidden-grow{
-    opacity: 0;
-    transform: scale(.1);
-    translate: 100;
-    transition: all 1.2s ;
-}
-.hidden-left{
-    opacity: 0;
-    translate: 100;
-    transition: all 1.2s ;
-    }
-
-    .hidden-right{
-        opacity: 0;
-        translate: 100%;
-        transition: all 1.2s ;
-        }
-.hidden-left{
-    opacity: 0;
-    translate: -100%;
-    transition: all 1.2s ;
-    }
-
-.show{
-     transform: scale(1);
-    translate:0;
-    opacity: 1;
-}
 
 /* sets default font properties */
-html{
-     font-size: 62.5%;     /*1rem = 10px  */
-    font-family: EB Garamond;
-    font-weight: 400;
-    /* line-height: 42px; */
-    letter-spacing: 0em;
-    text-align: left;
 
+html{
+    font-size: 62.5%;   /*   1rem = 10px  */
 }
 
-/* NAV  */
+/* ------------------------------------------------------------ NAV ------------------------------------------------------------------ */
 
 /* navigation bar styling */
 nav{
@@ -158,12 +104,12 @@ nav{
     background: white;
     z-index: 1;
     box-shadow: -1.1rem -.8rem 1.4rem;
-    height: 15vh;
+    height: auto;
 }
 
 /* sets styling for elements in nav bar */
 nav li{
-    font-family: 'Cormorant SC';
+font-family: 'Cormorant SC';
 font-style: normal;
 font-weight: 400;
 font-size: 3.5rem;
@@ -178,12 +124,36 @@ ul{
     display: flex;
 }
 
-.nav-btn{
+.nav-btn:link,
+.nav-btn:visited{
 text-decoration: none;
+}
+
+.nav-btn:hover{
+    color: #9046ff;
+    transition: all 0.3s ease 0s;
+}
+
+.buttonClinics{
+    color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 1.5rem;
+    background-color: #9146FF;
+    text-align: center;
 }
 
 .nav-btn.clinic{
     color:white;
+}
+
+.buttonClinics:hover{
+    background-color: #41145F;
+    transition: all 0.3s ease 0s;
+}
+
+.logo img{
+    height: 9rem;
 }
 
 /* sets style for hamburger menu that appears when in mobile view */
@@ -193,22 +163,67 @@ text-decoration: none;
     display: none;
 }
 
-/* sets size for main logo in nav bar */
-.logo img{
-    height: 9rem;
+
+/* ------------------------------------------------------------ HOME-----------------------------------------------------------------------*/
+
+.home{
+   font-family: "EB Garamond";
 }
 
 
-/* HOME  */
+/* sets style for the hero-image section */
 
-/* button style for home page  */
+
+.hero-home{
+    background-image: url(/images/pexels-kaique-rocha-109919\ 1.png);
+    background-size: cover;
+    height: 88vh;
+    width:100vw;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 5rem;
+    height: auto;
+}
+
+
+.hero-home h1{
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14rem;
+    line-height: 23.4rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero-home h2{
+    background: #41145F;
+box-shadow: 0 .4rem .4rem rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(.5rem);
+border-radius: 3.9rem;
+}
+
+
+.hero-home p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+    width: 50vw;
+    color: rgb(255, 255, 255);
+}
 
 .index-btn:link,
 .index-btn:visited{
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
-    padding: 1rem 6.5rem;
+    padding: 1.4rem 5rem;
     border-radius: 10rem;
     margin-top: 5.5rem;
     font-size: 2rem;
@@ -258,16 +273,6 @@ text-decoration: none;
     opacity: 0;
 }
 
-/* sets style for the hero-image section */
-section{
-    background-image: url(/images/pexels-kaique-rocha-109919\ 1.png);
-    width: inherit;
-    background-size: cover;
-    height: 88vh;
-    background-position: center;
-    
-}
-
 /* sets style for sections where background is white */
 .white{
     height: auto;
@@ -300,15 +305,7 @@ section{
     width: inherit;
 }
 
-/* sets style for find clinics button in nav bar */
-.buttonClinics{
-    color: white;
-    padding: 1rem;
-    border-radius: 2.6rem;
-    margin: 1.5rem;
-    background-color: #9146FF;
-    text-align: center;
-}
+
 
 /* sets styling for a div that has as property to display items in a vertical manner */
 .vertical{
@@ -335,16 +332,39 @@ color: #41145F;
 text-align: center;
 }
 
-/* sets styling for highlighted heading ("where") */
-#light{
-    font-family: 'Sansita Swashed';
+.vertical h3{
+    font-family: "Hammersmith One";
     font-style: normal;
     font-weight: 400;
-    font-size: 8em;
-    line-height: 10.9rem;
-    color: #9146FF;
-    margin-bottom: 3rem;
-    margin-right: 2rem;
+    font-size: 4em;
+    /* line-height: 114px; */
+    /* margin: 2rem; */
+    color: rgb(65, 20, 95);
+    text-align: center;
+    padding: 2rem;
+}
+
+.vertical ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 6.9rem;
+    color: #FFFFFF;
+}
+
+.vertical p{
+    font-family: "EB Garamond";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 6.9rem;
+    color: rgb(65, 20, 95);
+    width: 124rem;
+    max-width: 46vw;
 }
 
 /* sets styling for a div that has as property to display items in a horizontal manner */
@@ -358,9 +378,7 @@ text-align: center;
     align-content: center;
     width: 100%;
     padding-top: 0;
-    justify-content: space-evenly;
-
-    
+    justify-content: space-evenly; 
 }
 
 /* sets styling for a div that has as property to display items in a horizontal centered manner */
@@ -369,15 +387,11 @@ text-align: center;
     flex-direction: row;
     place-content: center;
     align-items: center;
-    /* margin: 30px; */
     flex-wrap: wrap;
-    /* padding: 30px; */
     align-content: center;
     width: 100%;
     padding-bottom: 0;
     justify-content: center;
-    
-    
 }
 
 /* sets styling for images located within a horintontal div */
@@ -392,9 +406,7 @@ text-align: center;
     flex-direction: row;
     place-content: center;
     align-items: center;
-    /* margin: 30px; */
     flex-wrap: wrap;
-    /* padding: 30px; */
     align-content: center;
     width: 100%;
     justify-content: space-evenly;
@@ -405,42 +417,10 @@ text-align: center;
     font-style: normal;
     font-weight: 400;
     font-size: 4rem;
-    /* line-height: 114px; */
-    /* margin: 2rem; */
     color: rgb(65, 20, 95);
     text-align: center;
 }
 
-/* 
-.index{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: flex-start;
-    justify-content: center;
- }  */
-
-
-section h1{
-    font-family: 'Mukta';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15rem;
-    line-height: 23.4rem;
-    text-align: center;
-    
-    color: #FFFFFF;
-
-}
-
-section h2{
-    background: #41145F;
-box-shadow: 0 .4rem .4rem rgba(0, 0, 0, 0.25);
-backdrop-filter: blur(.5rem);
-
-border-radius: 3.9rem;
-}
 .phoneHeading{
     display: none;
     background-color: #41145F;
@@ -471,66 +451,34 @@ border-radius: 3.9rem;
     color: rgb(255, 255, 255);
 }
 
-section p{
-    font-family: "EB Garamond";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 3.5rem;
-    line-height: 4.2rem;
-    width: 50vw;
-    color: rgb(255, 255, 255);
-}
-
-section{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 5rem;
-    height: auto;
-
-}
-
-#parf{
-    font-family: "EB Garamond";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 3.5rem;
-    line-height: 6.9rem;
-    color: rgb(65, 20, 95);
-    width: 124rem;
-    max-width: 46vw;
-}
 
 .purpleArt{
     background-image: url(/images/xx.png);
-    /* height: 50vh; */
     height: auto;
     background-position: bottom;
     background-size: cover;
 }
 
 #whiteTitle{
-    font-family: 'Hammersmith One';
+font-family: 'Hammersmith One';
 font-style: normal;
 font-weight: 400;
 font-size: 8em;
 line-height: 11.4rem;
-
 color: #FFFFFF;
 }
-.vertical ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'EB Garamond';
+
+
+/* sets styling for highlighted heading ("where") */
+#light{
+    font-family: 'Sansita Swashed';
     font-style: normal;
     font-weight: 400;
-    font-size: 3.5rem;
-    line-height: 6.9rem;
-    color: #FFFFFF;
+    font-size: 8em;
+    line-height: 10.9rem;
+    color: #9146FF;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
 }
 
 .imgButton{
@@ -541,23 +489,182 @@ color: #FFFFFF;
 #Polygon{
     width: 44rem;
     margin: 2.8rem;
-
 }
 
-.vertical h3{
-    font-family: "Hammersmith One";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 4em;
-    /* line-height: 114px; */
-    /* margin: 2rem; */
-    color: rgb(65, 20, 95);
+/* ------------------------------------------------------------ MISSION-----------------------------------------------------------------------*/
+.ms-body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #41145f;
+}
+
+.ms-title{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+.mission{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 59px;
+    width: 100%;
+    height: 20%;
+    font-size: 4rem;
     text-align: center;
-    padding: 2rem;
 }
 
+.ms-pics{
+    display: flex;
+    background: #9146FF;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 30%;
+    margin-top: 15rem;
+}
 
-/* CLINIC MAP  */
+.whitebanner{
+    display: flex;
+    background: #F1ECE8;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.25);
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+.ms-img{
+    height: 23.5rem;
+}
+
+/* ------------------------------------------------------------ RESOURCES -----------------------------------------------------------------------*/
+.resc-body{
+    background-color: #41145f;
+}
+
+/* Header for the Top of the page */
+.resourcesTitle {
+    color: #d9d9d9;
+    text-align: center;
+    font-size: 5rem;
+    padding: 5rem 0;
+    text-shadow: 3px 3px #161418;
+  }
+  
+  /* Background of the page (hero image) */
+  .background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
+      url("https://blogs.elca.org/faithlens/files/2022/05/iStock-1145766838.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* Holds the images, text, and sections */
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .photo {
+    height: 20rem;
+    width: 35rem;
+  }
+  
+  /* Shapes the boxes */
+  .first-section,
+  .second-section,
+  .third-section {
+    box-sizing: border-box;
+    margin: 4rem;
+    width: 36rem;
+    height: 45rem;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #e5e5e5;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    box-shadow: 0px 10px 10px #161418;
+  }
+  
+  .sectionText {
+    margin-top: 1.8rem;
+    font-size: 1.8rem;
+    color: #41145f;
+    text-align: center;
+  }
+  
+  /* Styling for the ellipses at the bottom containing links */
+  .sites {
+    text-align: center;
+    position: relative;
+    top: 4rem;
+    text-decoration: none;
+  }
+  
+  .websites:link,
+  .websites:visited{
+    text-decoration: none;
+  }
+
+  .websites:hover{
+    color: #41145f;
+  }
+  
+  
+  
+  .links {
+    background-color: #d9d9d9;
+    position: relative;
+    width: 80rem;
+    height: 30rem;
+    left: 30rem;
+    top: 8rem;
+    border-radius: 50%;
+    box-shadow: 0px 10px 10px 10px #161418;
+    text-align: center;
+    font-family: sanista swashed;
+    font-size: 2rem;
+    
+  }
+  
+  /* Styling for text that is below ellipse */
+  .emergency {
+    position: relative;
+    top: 10rem;
+    z-index: 4;
+    color: #f1ece8;
+    text-align: center;
+    font-size: 2rem;
+    font-family: sanista swashed;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  /* Styling for the links text in the ellipse */
+  .helpfulLinks {
+    color: #161418;
+    text-align: center;
+    position: relative;
+    top: 3rem;
+    text-decoration: underline dotted;
+  }
+  
+/* ------------------------------------------------------------ CLINIC MAP -----------------------------------------------------------------------*/
 
 .maps-container{
     height:100vh;
@@ -576,11 +683,125 @@ iframe{
     box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.853);
 }
 
+/* ------------------------------------------------------------ CONTACT -----------------------------------------------------------------------*/
+.contact-body{
+    background-image: linear-gradient(to right bottom,#0000004c,#00000059), url('Images/call.jpg');
+    background-position:center;
+    background-size: cover;
+    height: 103vh;
+    }
+    
+.contact-box.contact-width{
+    width:55rem;
+    height: 70rem;
+    background-color: rgba(0, 0, 0, 0.647);
+    box-shadow: 0 0 2rem 0 #292929;
+    top:50%;
+    left:50%;
+    transform: translate(40%,-30%);
+    position:absolute;
+    color:#f0f0f0;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    }
+
+.contact-box p:not(:last-child){
+    text-align: start;
+}
+    
+.h1-contact{
+    font-size: 6rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    padding-top: 5rem;
+    }
+    
+.table{
+    margin: 3rem;
+    }
+      
+    
+.table p{
+    font-size: 2rem;
+    font-weight: 300;
+    padding: .5rem;
+    }
+    
+.input-box.input-box-width{
+    width:48rem;
+    height:5rem;
+    margin-top:.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: .1rem solid;
+    border-radius: 1.4rem;
+    position: relative;
+    }
+
+     
+.input-box-width.textarea-box{
+    height:9.5rem;
+    padding: 1rem 0;
+    }
+
+.contact-btn:link,
+.contact-btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.5rem 6.5rem;
+    border-radius: 10rem;
+    margin-top: 5.5rem;
+    font-size: 1.5rem;
+    transition: all .2s;
+    position:relative;
+}     
+    
+.contact-btn-purp{
+    background-color:#9046ff;
+    color:#f0f0f0
+}
+
+.contact-btn:hover{
+  background:#9046ff
+}
 
 
+.contact-btn:hover{
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+}
 
+.contact-btn:active{
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
 
-/* FOOTER  */
+.contact-btn::after{
+    content:"";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position:absolute;
+    top:0;
+    left:0;
+    transition: all .4s;
+}
+
+.contact-btn-purp::after{
+    background-color:#9046ff;
+    z-index:-1;
+}
+
+.contact-btn:hover::after{
+    transform: scaleX(1.3) scaleY(1.7);
+    opacity: 0;
+}
+/* ------------------------------------------------------------ FOOTER-----------------------------------------------------------------------*/
 
 
 footer{
@@ -602,7 +823,7 @@ footer{
 .con-link:visited{
     color:white;
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 200;
     margin:1rem;
 }
@@ -676,13 +897,306 @@ transition: all 0.3s ease 0s;
 .footer-txt{
     text-align: center;
     color: #FFFFFF;
-    font-size:1.2rem;
+    font-size:1.5rem;
 }
 
 
-/* MEDIA QUERIES  */
+/* ------------------------------------------------------------ MEDIA QUERIES-----------------------------------------------------------------------*/
 
-@media screen and (max-width: 1200px) {
+
+
+
+
+
+
+@media all and (min-width: 1024px) and (max-width: 1300px)  {                                                    /*Small Desktop*/
+
+    /* CONTACT  */
+
+
+   .contact-box.contact-width{
+       transform: translate(40%,-40%);
+       }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 768px) and (max-width: 1280px) {                                                     /*Laptop*/
+
+    html{
+        font-size: 45%;
+    }
+ 
+
+   /* NAV  */
+
+   .nav-links{
+       display: none;
+   }
+
+   .hamburger{
+       display: flex;
+   }
+
+   /* MAPS  */
+
+   .maps-container{
+    height:80vh;
+    padding: 10rem 10rem;
+}
+
+
+    /* CONTACT  */
+
+   .contact-body{
+       height: 90vh;
+   }
+
+
+   .contact-box.contact-width{
+       transform: translate(-50%,-38%);
+       }
+}
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 480px) and (max-width: 768px) {       
+    
+    html{
+        font-size: 40%;
+    }                                                /*Tablet*/
+
+
+   /* NAV  */
+
+   .nav-links{
+       display: none;
+   }
+
+   .hamburger{
+       display: flex;
+   }
+  
+   nav{
+       justify-content: space-between;
+   }
+
+     /* HOME  */
+     .phoneHeading{
+        display: none;
+        padding-bottom: 3rem;
+    }
+
+    /* MAPS  */
+
+    .maps-container{
+        height:80vh;
+        padding: 10rem 10rem;
+    }
+
+    /* CONTACT  */
+   .contact-body{
+       height: 85vh;
+   }
+
+   .contact-box.contact-width{
+       transform: translate(-50%,-38%);
+       }
+
+}
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 480px) {                                                                             /*Phone*/
+
+
+   html{
+    font-size: 32%;
+}
+
+   /* NAV  */
+
+   .nav-links{
+       display: none;
+   }
+
+   .hamburger{
+       display: flex;
+   }
+
+   .phoneHeading{
+       display: flex;
+       padding-bottom: 3rem;
+   }
+
+   nav{
+       justify-content: space-between;
+   }
+   
+   /* HOME  */
+
+.hero-home{
+    height: 50rem;
+    margin:0;
+}
+
+.hero-home p{
+   display: none;
+}
+
+.hero-home h1{
+    display: none;
+}
+.index-btn.btn-top{
+    display: none;
+}
+
+    /* MAPS  */
+
+
+    .maps-container{
+        height:85vh;
+        padding: 8rem 5rem;
+    }
+
+   /* CONTACT  */
+
+   .contact-body{
+       height: 85vh;
+   }
+
+   .contact-box.contact-width{
+       transform: translate(-50%,-40%);
+       }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------ ANIMATIONS ------------------------------------------------------------------ */
+
+
+.hidden{
+    opacity: 0;
+    transition: all 1s ;
+    
+    }
+    
+    .hidden-center-1{
+        opacity: 0;
+       translate:165%;
+        transition: all 1s ease-out;
+    }
+    .hidden-center-2{
+        opacity: 0;
+       translate:100%;
+        transition: all 1s ease-out;
+    }
+    .hidden-center-3{
+        opacity: 0;
+       translate:-100%;
+        transition: all 1s ease-out;
+    }
+    .hidden-center-4{
+        opacity: 0;
+       translate:-165%;
+        transition: all 1s ease-out;
+    }
+    .hidden-grow{
+        opacity: 0;
+        transform: scale(.1);
+        translate: 100;
+        transition: all 1.2s ;
+    }
+    .hidden-left{
+        opacity: 0;
+        translate: 100;
+        transition: all 1.2s ;
+        }
+    
+        .hidden-right{
+            opacity: 0;
+            translate: 100%;
+            transition: all 1.2s ;
+            }
+    .hidden-left{
+        opacity: 0;
+        translate: -100%;
+        transition: all 1.2s ;
+        }
+    
+    .show{
+         transform: scale(1);
+        translate:0;
+        opacity: 1;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------ EXTRA -----------------------------------------------------------------------*/
+
+/* @media screen and (max-width: 1200px) {
 
     .nav-links{
         display: none;
@@ -766,7 +1280,7 @@ html{
     .maps-container{
         height:75vh;
     }
-  }
+  } */
 
 
 
