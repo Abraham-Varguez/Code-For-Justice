@@ -32,7 +32,7 @@ nav{
     background: white;
     z-index: 1;
     box-shadow: -1.1rem -.8rem 1.4rem;
-    height: 15vh;
+    height: auto;
 }
 
 /* sets styling for elements in nav bar */
