@@ -202,7 +202,7 @@ text-decoration: none;
     font-weight: 400;
     font-size: 14rem;
     line-height: 23.4rem;
-    text-align: center;
+    text-align: left;
     color: #FFFFFF;
 }
 
@@ -352,7 +352,7 @@ text-align: center;
 .vertical ul{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     font-family: 'EB Garamond';
     font-style: normal;
     font-weight: 400;
@@ -360,7 +360,14 @@ text-align: center;
     line-height: 6.9rem;
     color: #FFFFFF;
 }
-
+#info{
+    padding: 10rem;
+    margin: 5rem;
+    backdrop-filter: blur(9px);
+    border-radius: 3rem;
+    width: 80vw;
+    background-color: #ffffffdb;
+}
 .vertical p{
     font-family: "EB Garamond";
     font-style: normal;
@@ -501,6 +508,7 @@ color: #FFFFFF;
     height: 100vh;
     background-color: #41145f;
     background-image: url(/Images/pexels-photo-691710.jpeg);
+    background-size: cover;
 }
 .ms-heading{
     background-color: aliceblue;
