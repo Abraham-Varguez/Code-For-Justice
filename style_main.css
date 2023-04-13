@@ -24,6 +24,9 @@
     align-items: center;
     margin-top: 14vh;
 }
+#iconClosed{
+    display: none;
+}
 
 .hamburger-menu li{
     margin: 6rem;
@@ -762,6 +765,14 @@ html{
 
     .maps-container{
         height:75vh;
+    }
+  }
+
+
+
+  @media only screen and (min-width: 600px)  {
+    #ham-menu{
+        display: none;
     }
   }
 
