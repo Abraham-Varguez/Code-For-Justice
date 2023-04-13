@@ -825,7 +825,7 @@ transition: all 0.3s ease 0s;
 .footer-txt{
     text-align: center;
     color: #FFFFFF;
-    font-size:1.2rem;
+    font-size:1.5rem;
 }
 
 
@@ -857,10 +857,14 @@ transition: all 0.3s ease 0s;
 
 
 
-@media all and (min-width: 768px) and (max-width: 1255px) {                                                     /*Laptop*/
+@media all and (min-width: 768px) and (max-width: 1280px) {                                                     /*Laptop*/
+
+    html{
+        font-size: 45%;
+    }
+ 
 
    /* NAV  */
-
 
    .nav-links{
        display: none;
@@ -870,14 +874,18 @@ transition: all 0.3s ease 0s;
        display: flex;
    }
 
+   /* MAPS  */
+
+   .maps-container{
+    height:80vh;
+    padding: 10rem 10rem;
+}
+
+
     /* CONTACT  */
 
-    html{
-       font-size: 45%;
-   }
-
    .contact-body{
-       height: 100vh;
+       height: 90vh;
    }
 
 
@@ -894,7 +902,11 @@ transition: all 0.3s ease 0s;
 
 
 
-@media all and (min-width: 480px) and (max-width: 768px) {                                                       /*Tablet*/
+@media all and (min-width: 480px) and (max-width: 768px) {       
+    
+    html{
+        font-size: 40%;
+    }                                                /*Tablet*/
 
 
    /* NAV  */
@@ -906,28 +918,31 @@ transition: all 0.3s ease 0s;
    .hamburger{
        display: flex;
    }
-
-   .phoneHeading{
-       display: none;
-       padding-bottom: 3rem;
-   }
-
+  
    nav{
        justify-content: space-between;
    }
 
+     /* HOME  */
+     .phoneHeading{
+        display: none;
+        padding-bottom: 3rem;
+    }
+
+    /* MAPS  */
+
+    .maps-container{
+        height:80vh;
+        padding: 10rem 10rem;
+    }
+
     /* CONTACT  */
-
-    html{
-       font-size: 40%;
-   }
-
    .contact-body{
-       height: 90vh;
+       height: 85vh;
    }
 
    .contact-box.contact-width{
-       transform: translate(-50%,-50%);
+       transform: translate(-50%,-38%);
        }
 
 }
@@ -947,6 +962,7 @@ transition: all 0.3s ease 0s;
    html{
     font-size: 32%;
 }
+
    /* NAV  */
 
    .nav-links{
@@ -984,17 +1000,22 @@ transition: all 0.3s ease 0s;
     display: none;
 }
 
+    /* MAPS  */
 
 
+    .maps-container{
+        height:85vh;
+        padding: 8rem 5rem;
+    }
 
    /* CONTACT  */
 
    .contact-body{
-       height: 80vh;
+       height: 85vh;
    }
 
    .contact-box.contact-width{
-       transform: translate(-50%,-50%);
+       transform: translate(-50%,-40%);
        }
 
 }
